@@ -24,7 +24,7 @@ public class User_signup extends AppCompatActivity implements View.OnClickListen
     Button buttonSignup;
     ProgressDialog progressDialog;
     private FirebaseAuth firebaseAuth;
-    TextView textViewSignup;
+    TextView textViewSignin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,10 +33,10 @@ public class User_signup extends AppCompatActivity implements View.OnClickListen
         buttonSignup= (Button) findViewById(R.id.buttonSignup);
         editTextEmail = (EditText)findViewById(R.id.editTextEmail);
         editTextPassword = (EditText)findViewById(R.id.editTextPassword);
-        textViewSignup = (TextView)findViewById(R.id.textViewSignup);
+        textViewSignin = (TextView)findViewById(R.id.textViewSignin);
         progressDialog = new ProgressDialog(this);
         buttonSignup.setOnClickListener(this);
-        textViewSignup.setOnClickListener(this);
+        textViewSignin.setOnClickListener(this);
     }
 
     private void registerUser(){
@@ -80,8 +80,10 @@ public class User_signup extends AppCompatActivity implements View.OnClickListen
             //System.out.println("Here");
             registerUser();
         }
-        if(v == textViewSignup){
+        if(v == textViewSignin){
             //loginOpen
+            Intent intent = new Intent(User_signup.this,LoginActivity.class);
+            startActivity(intent);
         }
     }
 }

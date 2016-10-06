@@ -70,7 +70,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="4559de0cfea59abbbc8e397f23deea071d01814a">
+        sha1="93f10e7049f0d65666f9b683211c7b72f83bf7e8">
         <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_0353d220363d27886c65c46a3f6ce466e8438d72/classes.dex" />
     </item>
     <item
@@ -106,7 +106,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="578039dfd1cc66688183650059782261345b3ebf">
+        sha1="d7e3b4594fb76c0d78de361690f15846785872e4">
         <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_ce1628e46fd34e9845bcab5d36b329ea57c9e49e/classes.dex" />
     </item>
     <item
