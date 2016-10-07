@@ -3,12 +3,57 @@
 
     <item
         is-multidex="true"
+        jar="/home/vrushank/Chatter2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.0.2/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9919563cffd8e3732e944d3c437d4b9575a08448">
+        <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.0.2_2e4d50d35604afcab2ae86d7005e60e89f6eb834/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vrushank/Chatter2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.0.2/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4022261eeea0d92eb2997a68d2c1f084a16abad9">
+        <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.0.2_b21727e8fca1c29e7a04564014f5d87ac22bcee6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vrushank/Chatter2/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d7e3b4594fb76c0d78de361690f15846785872e4">
+        <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_ce1628e46fd34e9845bcab5d36b329ea57c9e49e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/vrushank/Chatter2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.0.2/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
         sha1="fa472b7cbd3897bf6bed6068ac0b00e494987688">
         <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-9.0.2_bda2bb850c2bf63f840b98cb64b7c7eaf9aad1e0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vrushank/Chatter2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.0.2/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9819419ce8d79f3f81a0fc70f9345ac8c843af9c">
+        <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-9.0.2_3f3a4dd266b73083c0bc87501031ee48ead74893/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vrushank/Chatter2/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_8338b9d6c0fb9a4028e2c63df3276ce5a3022506/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -21,12 +66,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/vrushank/Chatter2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.0.2/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="79e298d7fed2fcada58da7032d07d34ee198a545">
+        <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-module-9.0.2_af5d18d5fc5e910385489fd976456e08a2b83b2b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/vrushank/Chatter2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.0.2/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
         sha1="568d5bda0b4d51f90d978ace369bb9ad024d2057">
         <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-common-9.0.2_02230af7a23b7d623d14e201c37806c0e2d58075/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vrushank/Chatter2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="94d9cedd04b124aed044ac71c451a292856d854c">
+        <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.0.2_b2638013ee8e9a6caa4b4bac43411ec7a9ff3eb3/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -57,96 +120,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/vrushank/Chatter2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.0.2/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="51a11c41a08f099a204e1b8dcc04f27217de50ec">
-        <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.0.2_234b377ec1a771de967b3e87442750216b1429de/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vrushank/Chatter2/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="93f10e7049f0d65666f9b683211c7b72f83bf7e8">
-        <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_0353d220363d27886c65c46a3f6ce466e8438d72/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vrushank/Chatter2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.0.2/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="b3d0809a742c5f768c6aa9efc6decd5c1d6cd227">
-        <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.0.2_9413a24764ce527776c98d47830c507d7178fdde/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vrushank/Chatter2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.0.2/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="9919563cffd8e3732e944d3c437d4b9575a08448">
-        <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.0.2_2e4d50d35604afcab2ae86d7005e60e89f6eb834/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vrushank/Chatter2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.0.2/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="4022261eeea0d92eb2997a68d2c1f084a16abad9">
-        <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.0.2_b21727e8fca1c29e7a04564014f5d87ac22bcee6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vrushank/Chatter2/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="d7e3b4594fb76c0d78de361690f15846785872e4">
-        <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_ce1628e46fd34e9845bcab5d36b329ea57c9e49e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vrushank/Chatter2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.0.2/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="9819419ce8d79f3f81a0fc70f9345ac8c843af9c">
-        <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-9.0.2_3f3a4dd266b73083c0bc87501031ee48ead74893/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vrushank/Chatter2/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_8338b9d6c0fb9a4028e2c63df3276ce5a3022506/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vrushank/Chatter2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.0.2/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="79e298d7fed2fcada58da7032d07d34ee198a545">
-        <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-module-9.0.2_af5d18d5fc5e910385489fd976456e08a2b83b2b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vrushank/Chatter2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="94d9cedd04b124aed044ac71c451a292856d854c">
-        <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.0.2_b2638013ee8e9a6caa4b4bac43411ec7a9ff3eb3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/vrushank/Chatter2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -165,6 +138,24 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/vrushank/Chatter2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.0.2/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="51a11c41a08f099a204e1b8dcc04f27217de50ec">
+        <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.0.2_234b377ec1a771de967b3e87442750216b1429de/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vrushank/Chatter2/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d1d0e05a1f62769c07e96fba0c559dcf77608be8">
+        <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_0353d220363d27886c65c46a3f6ce466e8438d72/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/vrushank/Chatter2/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -180,6 +171,15 @@
         revision="23.0.3"
         sha1="aec1bc54964a85d851c2c1b1cb7f90f7dbd755ab">
         <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.0.2_dd7f39458ad1cdbdf03f3e7aa29879b86764f8d8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vrushank/Chatter2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.0.2/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b3d0809a742c5f768c6aa9efc6decd5c1d6cd227">
+        <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.0.2_9413a24764ce527776c98d47830c507d7178fdde/classes.dex" />
     </item>
 
 </items>

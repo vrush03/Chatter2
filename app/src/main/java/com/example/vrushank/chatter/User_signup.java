@@ -82,7 +82,8 @@ public class User_signup extends AppCompatActivity implements View.OnClickListen
         }
         if(v == textViewSignin){
             //loginOpen
-            Intent intent = new Intent(User_signup.this,LoginActivity.class);
+            finish();
+            Intent intent = new Intent(this,LoginActivity.class);
             startActivity(intent);
         }
     }
