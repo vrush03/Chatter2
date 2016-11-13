@@ -10,9 +10,9 @@
     tools:context="com.example.vrushank.chatter.User_signup">
 
     <LinearLayout
-        android:layout_centerVertical="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
         android:orientation="vertical">
 
         <EditText
@@ -37,13 +37,13 @@
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:text="Signup" />
+
         <TextView
+            android:id="@+id/textViewSignin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textViewSignin"
             android:text="Already Registered?Sign in here!"
-            android:textAlignment="center"
-            />
+            android:textAlignment="center" />
 
     </LinearLayout>
 </RelativeLayout>

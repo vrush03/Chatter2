@@ -23,8 +23,9 @@ public class Chat_room extends AppCompatActivity {
     Button btn_send_msg;
     EditText input_msg;
     TextView chat_conv;
-    String user,room,temp;
+    String user, room, temp;
     private DatabaseReference root;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,13 +83,14 @@ public class Chat_room extends AppCompatActivity {
         });
 
     }
-    private void append_chat(DataSnapshot datasnapshot){
-        String userchat,usermsg;
+
+    private void append_chat(DataSnapshot datasnapshot) {
+        String userchat, usermsg;
         Iterator i = datasnapshot.getChildren().iterator();
-        while (i.hasNext()){
-            usermsg = (String) ((DataSnapshot)i.next()).getValue();
-            userchat =  (String) ((DataSnapshot)i.next()).getValue();
-            chat_conv.append(userchat +" : "+usermsg +" \n");
+        while (i.hasNext()) {
+            usermsg = (String) ((DataSnapshot) i.next()).getValue();
+            userchat = (String) ((DataSnapshot) i.next()).getValue();
+            chat_conv.append(userchat + " : " + usermsg + " \n");
         }
 
     }
