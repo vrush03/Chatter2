@@ -2,6 +2,7 @@ package com.example.vrushank.chatter;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -66,8 +67,18 @@ public class User_signup extends AppCompatActivity implements View.OnClickListen
                             Toast.makeText(User_signup.this, "Successfully registered", Toast.LENGTH_LONG).show();
                             FirebaseUser user = firebaseAuth.getCurrentUser();
 
-                            addUsers(email,user.getUid());
+                            String temp[] = new String[100];
+                            String sendBuff;
+                            temp = email.split("@");
+                            sendBuff = temp[0];
+
+                            SharedPreferences preferences = getSharedPreferences("Username",MODE_PRIVATE);
+                            SharedPreferences.Editor editor = preferences.edit();
+                            editor.putString("User_name",sendBuff);
+                            editor.commit();
+                            //addUsers(email,user.getUid());
                             Intent intent = new Intent(User_signup.this, Profile.class);
+                            intent.putExtra("username",sendBuff);
                             startActivity(intent);
                         } else {
                             //display some message here

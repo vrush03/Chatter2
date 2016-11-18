@@ -1,5 +1,6 @@
 package com.example.vrushank.chatter;
 
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,6 +19,8 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+import static android.R.attr.name;
+
 public class Chat_room extends AppCompatActivity {
 
     Button btn_send_msg;
@@ -25,7 +28,7 @@ public class Chat_room extends AppCompatActivity {
     TextView chat_conv;
     String user, room, temp;
     private DatabaseReference root;
-
+    String name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -93,6 +96,10 @@ public class Chat_room extends AppCompatActivity {
             chat_conv.append(userchat + " : " + usermsg + " \n");
         }
 
+    }
+    public void getData() {
+        SharedPreferences preferences = this.getSharedPreferences("Username",this.MODE_PRIVATE);
+        user = preferences.getString("User_name","");
     }
 
 

@@ -3,6 +3,7 @@ package com.example.vrushank.chatter;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.support.annotation.StringDef;
 import android.support.v7.app.AppCompatActivity;
@@ -23,23 +24,29 @@ public class Profile extends AppCompatActivity implements View.OnClickListener {
     Button logout, enterChat, butPeer;
     EditText ed1;
     private FirebaseAuth firebaseAuth;
+    private String username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+
         firebaseAuth = FirebaseAuth.getInstance();
+        //firebaseAuth.signOut();
         if (firebaseAuth.getCurrentUser() == null) {
             finish();
             Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
         }
         FirebaseUser user = firebaseAuth.getCurrentUser();
-        request_user_name();
+
+        getData();
+        //username = getIntent().getExtras().get("username").toString();
+        //request_user_name();
         textViewemail = (TextView) findViewById(R.id.textViewUserEmail);
         textViewemail.setText("Welcome " + user.getEmail());
         textViewuser = (TextView) findViewById(R.id.textViewUserName);
-        textViewuser.setText(name);
+        textViewuser.setText(username);
         logout = (Button) findViewById(R.id.buttonLogout);
         enterChat = (Button) findViewById(R.id.buttonEnter);
 
@@ -82,14 +89,14 @@ public class Profile extends AppCompatActivity implements View.OnClickListener {
         if (v == enterChat) {
             finish();
             Intent intent = new Intent(this, MainActivity.class);
-            intent.putExtra("user_name", name);
+            intent.putExtra("user_name", username);
             startActivity(intent);
         }
 
         if (v == butPeer) {
             finish();
             Intent intent = new Intent(this, Peer_Chat_Room.class);
-            intent.putExtra("user_name", name);
+            intent.putExtra("user_name", username);
             startActivity(intent);
 
         }
@@ -106,5 +113,9 @@ public class Profile extends AppCompatActivity implements View.OnClickListener {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+    public void getData() {
+        SharedPreferences preferences = this.getSharedPreferences("Username",this.MODE_PRIVATE);
+        username = preferences.getString("User_name","");
     }
 }

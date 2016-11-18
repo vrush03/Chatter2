@@ -70,7 +70,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="6c26132b1c1963c7f8ade6d1993a804e81862fba">
+        sha1="8aa785e3196fc62549ad3eccf2a80e9d71c3b8c1">
         <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_0353d220363d27886c65c46a3f6ce466e8438d72/classes.dex" />
     </item>
     <item
@@ -115,7 +115,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="2a4770894ecc6205ca5074e7c5f698910e354d88">
+        sha1="ddf4dbced75a32b347ac52b9483aa9bc25623937">
         <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_ce1628e46fd34e9845bcab5d36b329ea57c9e49e/classes.dex" />
     </item>
     <item
@@ -189,6 +189,15 @@
         revision="23.0.3"
         sha1="aec1bc54964a85d851c2c1b1cb7f90f7dbd755ab">
         <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.0.2_dd7f39458ad1cdbdf03f3e7aa29879b86764f8d8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vrushank/Chatter2/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="40e7757d9b06db670062ddb3cf5b30c129b2fd8c">
+        <dex dex="/home/vrushank/Chatter2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.0.0_e62c1300372748736ecd9df61bb1cd8b2d023cef/classes.dex" />
     </item>
 
 </items>

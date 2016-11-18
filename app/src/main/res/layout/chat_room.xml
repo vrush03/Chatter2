@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.vrushank.chatter.Chat_room">
+    tools:context="com.example.vrushank.chatter.Chat_room"
+    android:background="@drawable/download"
+    >
 
     <Button
         android:id="@+id/btn_send"

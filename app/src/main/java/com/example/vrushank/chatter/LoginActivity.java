@@ -2,6 +2,7 @@ package com.example.vrushank.chatter;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -46,7 +47,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private void userLogin() {
-        String email = editTextEmail.getText().toString().trim();
+        final String email = editTextEmail.getText().toString().trim();
         String password = editTextPassword.getText().toString().trim();
 
         if (TextUtils.isEmpty(email)) {
@@ -68,7 +69,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 progressDialog.dismiss();
                 if (task.isSuccessful()) {
                     finish();
+                    String temp[] = new String[100];
+                    String sendBuff;
+                    temp = email.split("@");
+                    sendBuff = temp[0];
+
+                    SharedPreferences preferences = getSharedPreferences("Username",MODE_PRIVATE);
+                    SharedPreferences.Editor editor = preferences.edit();
+                    editor.putString("User_name",sendBuff);
+                    editor.commit();
                     Intent intent = new Intent(LoginActivity.this, Profile.class);
+                    intent.putExtra("username",sendBuff);
                     startActivity(intent);
                 }
             }

@@ -3,6 +3,7 @@ package com.example.vrushank.chatter;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -26,6 +27,8 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
+import static android.R.id.list;
+
 public class Peer_Chat_Room extends AppCompatActivity {
 
     Button add_user;
@@ -44,7 +47,9 @@ public class Peer_Chat_Room extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.listView2);
         arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list_of_rooms);
         listView.setAdapter(arrayAdapter);
-        user_name = getIntent().getExtras().get("user_name").toString();
+        getData();
+        //user_name = getIntent().getExtras().get("user_name").toString();
+        chatRoom = "";
         room_name = (EditText) findViewById(R.id.room_name_edittext_2);
         //request_user_name();
         add_user = (Button) findViewById(R.id.btn_add_room_2);
@@ -53,7 +58,7 @@ public class Peer_Chat_Room extends AppCompatActivity {
             public void onClick(View v) {
                 name = room_name.getText().toString();
                 Map<String, Object> map = new HashMap<String, Object>();
-                if (name.compareToIgnoreCase(user_name) > 0)
+                if (name.compareToIgnoreCase(user_name) < 0)
                     chatRoom = name + user_name;
                 else
                     chatRoom = user_name + name;
@@ -101,32 +106,21 @@ public class Peer_Chat_Room extends AppCompatActivity {
 
     }
 
-    private void request_user_name() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Enter username of The Friend You want to chat:");
-        final EditText input_field = new EditText(this);
-        builder.setView(input_field);
-        builder.setPositiveButton("Welcome!", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialogInterface, int i) {
-                name = input_field.getText().toString();
-                Map<String, Object> map = new HashMap<String, Object>();
-                if (name.compareToIgnoreCase(user_name) > 0)
-                    chatRoom = name + user_name;
-                else
-                    chatRoom = user_name + name;
 
-                map.put(chatRoom, "");
-                root.updateChildren(map);
-            }
-        });
-        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.cancel();
-
-            }
-        });
-
-        builder.show();
+    public void getData() {
+        SharedPreferences preferences = this.getSharedPreferences("Username", this.MODE_PRIVATE);
+        user_name = preferences.getString("User_name", "");
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent startMain = new Intent(Peer_Chat_Room.this,Profile.class);
+        startMain.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startMain.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startMain.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        //list.clear();
+        startActivity(startMain);
+
+    }
+
 }
